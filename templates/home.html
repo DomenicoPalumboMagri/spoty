@@ -28,10 +28,12 @@
 <td>
 {% if playlist['images'] %}
 <img src="{{ playlist['images'][0]['url'] }}" width="50" alt="Copertina playlist">
+<a href="/playlist_item/{{ playlist['id']}}">Visualizza</a>
 {% else %}
 Nessuna immagine
 {% endif %}
 </td>
+
 </tr>
 {% endfor %}
 </tbody>
